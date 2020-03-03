@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
 
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+  
   <!--CSS Link-->
   <link rel="stylesheet" type="text/css" href="Styling.css">
 </head>
@@ -23,7 +23,7 @@
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" style="background-color: #0BADA6; color: #FFFFFF" href="index.html">Latitude</a>
-      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,14 +31,14 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" style="color: #6D8092">
+              aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item"  href="max_temperature.html">Max Temperature</a>
-              <a class="dropdown-item"  href="humidity.html">Humidity</a>
-              <a class="dropdown-item"  href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item"  href="wind_speed.html">Wind Speed</a>
+              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item active" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item">
@@ -55,40 +55,50 @@
   <!-- Content Section -->
   <div class="container">
     <div class="row">
-      <div>
+      <div class="col-lg-7 col-md-12">
         <!-- Left box  -->
         <div class="box">
-          <h3 style="color: #0BADA6" class="title">Comparison: Latitude vs X</h3>
+          <h3 style="color: #0BADA6" class="title">Wind Speed</h3>
           <hr>
-          <p>Click any plot to get an in-depth analysis.</p>
-          <div class="container" style="padding-bottom: 40px;">
-            <div class="row">
-              <div class="col-lg-6" style="padding: 30px;">
-                <div style="color: #0BADA6" class="title">vs. Max Temperature</div>
+          <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
+          <p>Wind speed appears to slightly increase as we move away from the equator. However, to conclusively
+            describe a pattern, we would need to go beyond the range in data to reach cities at closer to the poles.
+            Only then can we have a sample large to confirm the pattern.</p>
+
+
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12">
+
+
+
+        
+        <!-- Right Box -->
+        <div class="box">
+          <h5 style="color: #0BADA6" class="title">Visualizations</h5>
+          <hr>
+          <div class="container">
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
                 <a href="max_temperature.html">
                   <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature Image">
                 </a>
               </div>
-              <div class="col-lg-6" style="padding: 30px;">
-                <div style="color: #0BADA6" class="title">vs. Humidity</div>
+              <div class="col-6">
                 <a href="humidity.html">
                   <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
                 </a>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-lg-6" style="padding: 30px;">
-                <div style="color: #0BADA6" class="title">vs. Cloudiness</div>
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
                 <a href="cloudiness.html">
                   <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
                 </a>
-
               </div>
-              <div class="col-lg-6" style="padding: 30px;">
-                <div style="color: #0BADA6" class="title">vs. Wind Speed</div>
+              <div class="col-6">
                 <a href="wind_speed.html">
-                  <img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
+                  <img class="panel active" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
                 </a>
               </div>
             </div>
@@ -98,7 +108,6 @@
     </div>
   </div>
 
-
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -106,7 +115,6 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
