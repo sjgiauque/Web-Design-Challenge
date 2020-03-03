@@ -61,6 +61,7 @@ img{
     font-weight: bolder; 
     padding-top: 25px; 
 }
+
 /* Paragraph Element */
 p{
  color: #6D8092;
@@ -74,8 +75,8 @@ p{
     padding: 10px 20px 15px; 
     color:black;
     background-color: white; 
-
   }
+  
 /* Table */
   .table{
     font-size: 15px; 
@@ -125,4 +126,3 @@ button:focus {
     
     }
 }
-
